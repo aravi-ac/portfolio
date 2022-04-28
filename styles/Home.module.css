@@ -2,6 +2,83 @@
   padding: 0 2rem;
 
   background: #f3f3f3;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - var(--header-height));
   height: fit-content;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container > div {
+  width: 40%;
+}
+
+.container > div:first-child {
+  display: flex;
+  flex-direction: column;
+  place-items: flex-start;
+  place-content: center;
+  gap: 25px;
+}
+
+.container > div:last-child {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.welcome {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 105%;
+  margin: 0;
+}
+
+.welcome_desc {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.book_a_call {
+  padding: 24px;
+  gap: 12px;
+  color: #fff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(20%, #b16cea),
+    color-stop(60%, #ff5e69),
+    color-stop(80%, #ff8a56),
+    to(#ffa84b)
+  );
+  border: none;
+  display: flex;
+  place-items: center;
+  font-size: 27px;
+  font-family: "DM SANS";
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+.overall_rating {
+  display: flex;
+  place-items: center;
+  gap: 5px;
+}
+.overall_rating > h5 {
+  font-size: 20px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  margin: 0;
+}
+.overall_rating > h5 > span {
+  font-family: "Montserrat";
 }
