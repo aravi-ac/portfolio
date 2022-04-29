@@ -1,18 +1,40 @@
 import React from "react";
-import styles from "./Career.module.css";
+import styles from "./Projects.module.css";
 import Image from "next/image";
 
-const Career = () => {
+const Projects = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>
-        <h3>Design that puts your growth on priority</h3>
-        <p>
-          I’ve spent 15 years building and testing my process. It just works.
-          Every time.
-        </p>
+        <h3>Work spanning 40 projects, 14 countries and 6 years.</h3>
+        <div className={styles.description}>
+          <p>
+            Over the past 6 years, I've worked with a diverse range of clients,
+            from startups to Fortune 500 companies.
+          </p>
+          <div className={styles.nav}>
+            <div className={styles.icons}>
+              <Image
+                src="/static/icons/arrow_back.svg"
+                width={30}
+                height={30}
+                alt="nav icon"
+                layout="fixed"
+              />
+            </div>
+            <div className={styles.icons}>
+              <Image
+                src="/static/icons/arrow_forward.svg"
+                width={30}
+                height={30}
+                alt="nav icon"
+                layout="fixed"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <div className={styles.content}>
+      {/* <div className={styles.content}>
         <div className={styles.left}>
           <div className={styles.row}>
             <div>
@@ -76,9 +98,9 @@ const Career = () => {
           <div className=""></div>
           <div className={styles.display}></div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default Career;
+export default Projects;
