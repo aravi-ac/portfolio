@@ -1,0 +1,130 @@
+.wrapper {
+  padding: 3rem;
+  height: calc(100vh - var(--header-height));
+  background: #f3f3f3;
+  color: #000;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+
+  display: grid;
+  place-content: center;
+  gap: 60px;
+}
+.left > h1 {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 105%;
+  margin: 20px 0 20px 100px;
+
+  width: 80%;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.section {
+  width: fit-content;
+  margin-left: 100px;
+
+  display: grid;
+  gap: 15px;
+}
+.section > h6 {
+  font-size: 24px;
+  line-height: 117%;
+
+  font-family: Inter;
+  font-weight: 500;
+  margin: 0;
+}
+
+.section > h4 {
+  background: linear-gradient(
+    90deg,
+    #b16cea 20%,
+    #ff5e69 60%,
+    #ff8a56 80%,
+    #ffa84b 90%
+  );
+  font-size: 28px;
+  line-height: 136%;
+  text-decoration: none;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: Montserrat;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.services,
+.social_links,
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.services > label,
+.social_links > label,
+.address > label {
+  color: rgba(13, 14, 16, 0.4);
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 156%;
+  font-weight: 500;
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+  font-style: normal;
+
+  margin-left: 20px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.list > p {
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 18px 22px;
+  border-radius: 30px;
+
+  font-family: Inter;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.social_nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.social_nav > a {
+  background: #000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+.address {
+  font-family: Montserrat;
+  letter-spacing: 0.05em;
+  line-height: 1.5rem;
+}

@@ -3,10 +3,12 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Career from "components/Career";
 import Projects from "components/Projects";
+import About from "components/About";
+import Contact from "components/Contact";
 
 const Landing = () => {
   return (
-    <>
+    <main>
       <div className={styles.container}>
         <div className="">
           <h1 className={styles.welcome}>
@@ -49,7 +51,9 @@ const Landing = () => {
       </div>
       <Career />
       <Projects />
-    </>
+      <About />
+      <Contact />
+    </main>
   );
 };
 

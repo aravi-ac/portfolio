@@ -3,6 +3,7 @@ import styles from "./Projects.module.css";
 import Image from "next/image";
 
 const Projects = () => {
+  // const arr = new Array
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>
@@ -34,71 +35,28 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      {/* <div className={styles.content}>
+      <div className={styles.content}>
         <div className={styles.left}>
-          <div className={styles.row}>
-            <div>
-              <div className={styles.icons}>
-                <Image
-                  src="/static/icons/north_east.svg"
-                  width={25}
-                  height={25}
-                  layout="fixed"
-                  alt="icons"
-                />
-              </div>
-            </div>
-            <div className={styles.detail}>
-              <h6>Research</h6>
-              <p>
-                I deep dive into your industry, your audience and your product.
-              </p>
-            </div>
-          </div>
-          <div className={styles.row}>
-            <div>
-              <div className={styles.icons}>
-                <Image
-                  src="/static/icons/north_east.svg"
-                  width={25}
-                  height={25}
-                  layout="fixed"
-                  alt="icons"
-                />
-              </div>
-            </div>
-            <div className={styles.detail}>
-              <h6>Research</h6>
-              <p>
-                I deep dive into your industry, your audience and your product.
-              </p>
-            </div>
-          </div>
-          <div className={styles.row}>
-            <div>
-              <div className={styles.icons}>
-                <Image
-                  src="/static/icons/north_east.svg"
-                  width={25}
-                  height={25}
-                  layout="fixed"
-                  alt="icons"
-                />
-              </div>
-            </div>
-            <div className={styles.detail}>
-              <h6>Research</h6>
-              <p>
-                I deep dive into your industry, your audience and your product.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className={styles.right}>
-          <div className=""></div>
           <div className={styles.display}></div>
         </div>
-      </div> */}
+        <div className={styles.right}>
+          {Array(3)
+            .fill(null)
+            .map((item) => (
+              <div className={styles.detail}>
+                <h4 className="">Benefits of Portfolio UI Kit</h4>
+                <ul className={styles.points}>
+                  <li>You’ve been UI Designer for 2+ years.</li>
+                  <li>
+                    You’ll ensure content strategy and design are perfectly
+                    in-sync.
+                  </li>
+                  <li>Design and implementation of data storage solutions.</li>
+                </ul>
+              </div>
+            ))}
+        </div>
+      </div>
     </div>
   );
 };
