@@ -42,8 +42,8 @@ const Projects = () => {
         <div className={styles.right}>
           {Array(3)
             .fill(null)
-            .map((item) => (
-              <div className={styles.detail}>
+            .map((item, key) => (
+              <div key={key} className={styles.detail}>
                 <h4 className="">Benefits of Portfolio UI Kit</h4>
                 <ul className={styles.points}>
                   <li>You’ve been UI Designer for 2+ years.</li>
