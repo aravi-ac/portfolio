@@ -1,6 +1,11 @@
-name: Node CI
+name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branch: [heroku]
+  pull_request:
+    branch: [heroku]
+  workflow_disoatch:
 
 jobs:
   build:
