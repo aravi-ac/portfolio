@@ -56,9 +56,15 @@ const Contact = () => {
         <section className={styles.social_links}>
           <label>Social links</label>
           <nav className={styles.social_nav}>
-            {socialLinks.map((item) => (
-              <a>
-                <Image src={item?.icon} width={25} height={25} layout="fixed" />
+            {socialLinks.map((item, key) => (
+              <a key={key}>
+                <Image
+                  src={item?.icon}
+                  width={25}
+                  height={25}
+                  layout="fixed"
+                  alt=""
+                />
               </a>
             ))}
           </nav>

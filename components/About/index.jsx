@@ -13,7 +13,7 @@ const About = () => {
         </h2>
         <p className={styles.about_desc}>
           I do a lot of things but I specialize in helping businesses create
-          better user experiences. Over the past 6 years, I've worked with a
+          better user experiences. Over the past 6 years, Ive worked with a
           diverse range of clients, from startups to Fortune 500 companies.
         </p>
       </div>

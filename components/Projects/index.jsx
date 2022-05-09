@@ -10,7 +10,7 @@ const Projects = () => {
         <h3>Work spanning 40 projects, 14 countries and 6 years.</h3>
         <div className={styles.description}>
           <p>
-            Over the past 6 years, I've worked with a diverse range of clients,
+            Over the past 6 years, Ive worked with a diverse range of clients,
             from startups to Fortune 500 companies.
           </p>
           <div className={styles.nav}>

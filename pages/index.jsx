@@ -25,6 +25,7 @@ const Landing = () => {
               layout="fixed"
               width="25"
               height="25"
+              alt=""
             />
           </button>
           <div className={styles.overall_rating}>
@@ -33,6 +34,7 @@ const Landing = () => {
               layout="fixed"
               width="25"
               height="25"
+              alt=""
             />
             <h5>
               Excellent <span>4.9 out of 5</span>
