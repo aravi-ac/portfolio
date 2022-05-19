@@ -6,7 +6,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --header-height: 70px;
 }
-
+html {
+  overflow-x: hidden;
+}
 a {
   color: inherit;
   text-decoration: none;

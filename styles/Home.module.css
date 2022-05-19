@@ -1,5 +1,6 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 3rem;
+  padding-top: 70px;
 
   background: #f3f3f3;
   min-height: calc(100vh - var(--header-height));
@@ -82,3 +83,51 @@
 .overall_rating > h5 > span {
   font-family: "Montserrat";
 }
+
+/* responsive screen ipad */
+@media (max-width: 1000px) {
+  .container {
+    justify-content: space-between;
+  }
+  .container > div:first-child {
+    width: 50%;
+  }
+}
+/* - - - - - - - - - */
+
+/* reponsive ipda min (770px) */
+@media (max-width: 770px) {
+  .container {
+    padding: 70px 2rem 2rem;
+  }
+  .welcome {
+    font-size: 46px;
+  }
+}
+/* - - - - - - - - - - - - -  */
+
+/* resposive screen mobile */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .container > div:first-child {
+    width: 90%;
+  }
+  .container > div:last-child {
+    align-self: center;
+  }
+  .welcome {
+    font-size: 55px;
+  }
+}
+/* - - - - - - - - - - - - */
+
+/* responsive screen (400px) */
+@media (max-width: 400px) {
+  .container > div:first-child {
+    width: 100%;
+  }
+}
+/* - - - - - - - - - - - - - */

@@ -1,8 +1,10 @@
 .wrapper {
-  padding: 2rem 3rem;
-  height: calc(100vh - var(--header-height));
+  padding: 3rem;
+  min-height: calc(100vh - var(--header-height));
+  height: fit-content;
   background: #f3f3f3;
   color: #000;
+  gap: 30px;
 
   display: flex;
   flex-direction: column;
@@ -43,6 +45,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  gap: 30px;
 }
 
 .left {
@@ -103,3 +106,54 @@
   background: #000;
   border-radius: 50px;
 }
+
+/* responsive screen ipad */
+@media (max-width: 1000px) {
+  .wrapper {
+    gap: 30px;
+  }
+  .description {
+    width: 100%;
+  }
+  .description > p {
+    width: 100% !important;
+  }
+  .content {
+    gap: 4%;
+  }
+  .content > div {
+    width: 48%;
+  }
+  .right {
+    padding: 25px 35px;
+  }
+}
+/* - - - - - - - - - - - */
+
+/* responsive screen 770px */
+@media (max-width: 770px) {
+  .header {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .content > div {
+    width: 100%;
+  }
+}
+/* - - - - - - - - - - - */
+
+/* responsive screen mobile */
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 3rem 2rem;
+  }
+}
+/* - - - - - - - - - - - */
+
+/* responsive screen 400px */
+/* - - - - - - - - - - - */
